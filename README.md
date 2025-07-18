@@ -1,221 +1,267 @@
-# Simone Guzzo Aesthetics - Website Completo
+# Simone Guzzo Aesthetics - Complete Website
 
-## 🎯 Sobre o Projeto
+## 🎯 About the Project
 
-Website profissional para o negócio de estética da Simone Guzzo, enfermeira especializada em procedimentos estéticos como Botox e preenchimentos faciais. O site foi desenvolvido com foco em transmitir segurança, profissionalismo e elegância.
+A professional website for Simone Guzzo's aesthetics business, a nurse specialising in aesthetic procedures such as Botox and facial fillers. The website was developed with a focus on conveying trust, professionalism, and elegance.
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 simoneguzzoaesthetics/
 │
-├── index.html              # Página principal
-├── about.html              # Sobre Simone
-├── services.html           # Serviços oferecidos
-├── gallery.html            # Galeria de resultados
-├── faq.html               # Perguntas frequentes
-├── contact.html           # Contato e formulários
+├── index.html              # Homepage
+├── about.html              # About Simone
+├── services.html           # Services offered
+├── gallery.html            # Results gallery
+├── faq.html               # Frequently asked questions
+├── contact.html           # Contact and forms
 │
 ├── css/
-│   └── styles.css         # CSS personalizado
+│   └── styles.css         # Custom CSS
 ├── js/
-│   └── scripts.js         # JavaScript interativo
+│   └── scripts.js         # Interactive JavaScript
 ├── assets/
-│   └── images/            # Imagens do site
+│   └── images/            # Website images
 │
-├── README.md              # Este arquivo
-├── todo.md               # Lista de tarefas
-└── teste-resultados.md   # Resultados dos testes
+├── README.md              # This file
+├── todo.md               # Task list
+└── test-results.md       # Test results
 ```
 
-## 🎨 Design e Tecnologias
+## 🎨 Design and Technologies
 
-### Paleta de Cores
-- **Branco**: Base limpa e profissional
-- **Rosa Claro**: #f9e9ef - Suavidade e feminilidade
-- **Dourado**: #c9a96e - Elegância e sofisticação
+### Colour Palette
 
-### Fontes
-- **Playfair Display**: Títulos elegantes
-- **Inter**: Texto corpo moderno e legível
+- **White**: Clean and professional base
+- **Light Pink**: #f9e9ef - Softness and femininity
+- **Gold**: #c9a96e - Elegance and sophistication
 
-### Tecnologias Utilizadas
-- **HTML5**: Estrutura semântica
-- **TailwindCSS**: Framework CSS via CDN
-- **JavaScript Vanilla**: Interatividade
-- **CSS Personalizado**: Animações e efeitos
+### Fonts
 
-## 📱 Funcionalidades Implementadas
+- **Playfair Display**: Elegant headings
+- **Inter**: Modern and readable body text
 
-### ✅ Páginas Completas
-- [x] **index.html** - Página principal com hero, serviços e testemunhos
-- [x] **about.html** - História e qualificações da Simone
-- [x] **services.html** - Detalhes dos procedimentos e preços
-- [x] **gallery.html** - Galeria de antes/depois
-- [x] **faq.html** - Perguntas frequentes categorizadas
-- [x] **contact.html** - Formulários e informações de contato
+### Technologies Used
 
-### ✅ Funcionalidades JavaScript
-- [x] Menu mobile responsivo
-- [x] Filtros da galeria por categoria
-- [x] FAQ accordion interativo
-- [x] Validação de formulários
-- [x] Animações de scroll
-- [x] Header com efeito de scroll
-- [x] Integração WhatsApp
-- [x] Sistema de notificações
+- **HTML5**: Semantic structure
+- **TailwindCSS**: CSS framework via CDN
+- **Vanilla JavaScript**: Interactivity
+- **Custom CSS**: Animations and effects
 
-### ✅ Design Responsivo
-- [x] Layout mobile-first
-- [x] Compatibilidade desktop e mobile
-- [x] Imagens otimizadas
-- [x] Navegação touch-friendly
+## 📱 Implemented Features
 
-## 🚀 Como Usar
+### ✅ Completed Pages
 
-### 1. Teste Local
+- [x] **index.html** - Homepage with hero, services, and testimonials
+
+- [x] **about.html** - Simone’s story and qualifications
+
+- [x] **services.html** - Details of procedures and prices
+
+- [x] **gallery.html** - Before/after gallery
+
+- [x] **faq.html** - Categorised frequently asked questions
+
+- [x] **contact.html** - Forms and contact information
+
+### ✅ JavaScript Features
+
+- [x] Responsive mobile menu
+
+- [x] Gallery filters by category
+
+- [x] Interactive FAQ accordion
+
+- [x] Form validation
+
+- [x] Scroll animations
+
+- [x] Header scroll effect
+
+- [x] WhatsApp integration
+
+- [x] Notification system
+
+### ✅ Responsive Design
+
+- [x] Mobile-first layout
+
+- [x] Desktop and mobile compatibility
+
+- [x] Optimised images
+
+- [x] Touch-friendly navigation
+
+## 🚀 How to Use
+
+### 1. Local Testing
+
 ```bash
-# Navegue até a pasta do projeto
+# Navigate to the project folder
 cd simoneguzzoaesthetics
 
-# Inicie um servidor local
+# Start a local server
 python3 -m http.server 8000
 
-# Acesse no navegador
+# Access in the browser
 http://localhost:8000
 ```
 
-### 2. Personalização
+### 2. Customisation
 
-#### Alterar Informações de Contato
-Edite os seguintes arquivos:
-- `contact.html` - Formulários e informações
-- `js/scripts.js` - Número do WhatsApp (linha 420)
+#### Update Contact Information
 
-#### Alterar Preços
-Edite `services.html` nas seções de preços dos serviços.
+Edit the following files:
 
-#### Adicionar/Remover Imagens
-- Coloque novas imagens em `assets/images/`
-- Atualize os caminhos nos arquivos HTML
+- `contact.html` - Forms and contact details
+- `js/scripts.js` - WhatsApp number (line 420)
 
-### 3. Integração de Formulários
+#### Update Prices
 
-#### Formspree (Recomendado)
-1. Crie conta em https://formspree.io
-2. Substitua `YOUR_FORM_ID` em `contact.html`
-3. Configure redirecionamento pós-envio
+Edit `services.html` in the service price sections.
+
+#### Add/Remove Images
+
+- Place new images in `assets/images/`
+- Update paths in HTML files
+
+### 3. Form Integration
+
+#### Formspree (Recommended)
+
+1. Create an account at https://formspree.io
+2. Replace `YOUR_FORM_ID` in `contact.html`
+3. Configure post-submission redirect
 
 #### Netlify Forms
-1. Faça deploy no Netlify
-2. Adicione `netlify` ao atributo `data-netlify="true"`
 
-## 📧 Configurações Necessárias
+1. Deploy on Netlify
+2. Add `netlify` to the attribute `data-netlify="true"`
+
+## 📧 Required Configurations
 
 ### 1. WhatsApp
-- Substitua `5511999999999` pelo número real
-- Formato: código do país + DDD + número
 
-### 2. E-mail
+- Replace `5511999999999` with the actual number
+- Format: country code + area code + number
+
+### 2. Email
+
 - Configure `simone@simoneguzzoaesthetics.com`
-- Atualize links `mailto:` nos arquivos
+- Update `mailto:` links in the files
 
 ### 3. Google Maps
-- Obtenha API key do Google Maps
-- Substitua o placeholder em `contact.html`
+
+- Obtain a Google Maps API key
+- Replace the placeholder in `contact.html`
 
 ### 4. Google Analytics
-- Adicione código de tracking
-- Insira antes do `</head>` em todas as páginas
 
-## 🌐 Deploy e Hospedagem
+- Add tracking code
+- Insert before `</head>` on all pages
 
-### Opções Recomendadas
+## 🌐 Deployment and Hosting
 
-#### 1. Netlify (Gratuito)
+### Recommended Options
+
+#### 1. Netlify (Free)
+
 ```bash
-# Arraste a pasta para netlify.com
-# Ou conecte repositório Git
+# Drag the folder to netlify.com
+# Or connect a Git repository
 ```
 
-#### 2. Vercel (Gratuito)
+#### 2. Vercel (Free)
+
 ```bash
 npm i -g vercel
 vercel
 ```
 
 #### 3. GitHub Pages
-1. Crie repositório no GitHub
-2. Faça upload dos arquivos
-3. Ative GitHub Pages nas configurações
 
-### Domínio Personalizado
+1. Create a repository on GitHub
+2. Upload the files
+3. Enable GitHub Pages in the settings
+
+### Custom Domain
+
 - Configure `simoneguzzoaesthetics.com`
-- Adicione certificado SSL
-- Configure redirecionamentos
+- Add an SSL certificate
+- Set up redirects
 
-## 🔧 Manutenção e Atualizações
+## 🔧 Maintenance and Updates
 
-### Adicionar Novos Serviços
-1. Edite `services.html`
-2. Adicione imagens em `assets/images/`
-3. Atualize menu se necessário
+### Add New Services
 
-### Atualizar Galeria
-1. Adicione imagens em `assets/images/`
-2. Edite `gallery.html`
-3. Configure filtros se necessário
+1. Edit `services.html`
+2. Add images to `assets/images/`
+3. Update the menu if necessary
 
-### Adicionar Testemunhos
-1. Edite `index.html`
-2. Mantenha formato de 5 estrelas
-3. Use nomes reais (com permissão)
+### Update Gallery
 
-## 📊 SEO e Performance
+1. Add images to `assets/images/`
+2. Edit `gallery.html`
+3. Configure filters if needed
 
-### Meta Tags Incluídas
-- Title tags otimizados
+### Add Testimonials
+
+1. Edit `index.html`
+2. Maintain a 5-star format
+3. Use real names (with permission)
+
+## 📊 SEO and Performance
+
+### Included Meta Tags
+
+- Optimised title tags
 - Meta descriptions
 - Open Graph tags
-- Viewport responsivo
+- Responsive viewport
 
-### Melhorias Futuras
-- [ ] Lazy loading de imagens
+### Future Improvements
+
+- [ ] Image lazy loading
+
 - [ ] Service Worker (PWA)
-- [ ] Compressão de imagens
-- [ ] Minificação de CSS/JS
 
-## 🛡️ Segurança e Compliance
+- [ ] Image compression
 
-### LGPD/GDPR
-- Adicione política de privacidade
-- Configure cookies consent
-- Implemente opt-in para newsletters
+- [ ] CSS/JS minification
 
-### Segurança
-- Use HTTPS sempre
-- Valide formulários no backend
+## 🛡️ Security and Compliance
+
+### GDPR/UK GDPR
+
+- Add a privacy policy
+- Configure cookie consent
+- Implement opt-in for newsletters
+
+### Security
+
+- Always use HTTPS
+- Validate forms on the backend
 - Configure CSP headers
 
-## 📞 Suporte e Contato
+## 📞 Support and Contact
 
-Para dúvidas sobre o website:
-- Documentação completa incluída
-- Código comentado para facilitar manutenção
-- Estrutura modular para expansões futuras
+For questions about the website:
 
-## 🎉 Próximos Passos
+- Comprehensive documentation included
+- Commented code for easier maintenance
+- Modular structure for future expansions
 
-1. **Teste completo** em diferentes dispositivos
-2. **Configure integrações** (formulários, analytics)
-3. **Faça deploy** na plataforma escolhida
-4. **Configure domínio** personalizado
-5. **Teste formulários** em produção
-6. **Configure backup** regular
+## 🎉 Next Steps
+
+1. **Complete testing** on various devices
+2. **Configure integrations** (forms, analytics)
+3. **Deploy** to the chosen platform
+4. **Set up custom domain**
+5. **Test forms** in production
+6. **Configure regular backups**
 
 ---
 
-**Desenvolvido com ❤️ para Simone Guzzo Aesthetics**
+**Developed with ❤️ for Simone Guzzo Aesthetics**
 
-*Website profissional para procedimentos estéticos com foco em segurança e resultados naturais.*
-
+*Professional website for aesthetic procedures with a focus on safety and natural results.*
