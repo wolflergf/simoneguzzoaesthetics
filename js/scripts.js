@@ -180,7 +180,7 @@ function initContactForm() {
 
       // Show loading state
       submitBtn.disabled = true;
-      submitBtn.innerHTML = 'Enviando<span class="loading-dots">...</span>';
+      submitBtn.innerHTML = 'Sending<span class="loading-dots">...</span>';
 
       // Add form validation
       const requiredFields = this.querySelectorAll("[required]");
@@ -213,7 +213,7 @@ function initContactForm() {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
         emailField.classList.add("border-red-500");
-        showNotification("Please enter a valid email.", "error");
+        showNotification("Please enter a valid email address.", "error");
         return;
       }
 
@@ -222,7 +222,7 @@ function initContactForm() {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
         showNotification(
-          "Message sent successfully! We will get in touch soon.",
+          "Message sent successfully! We will get back to you shortly.",
           "success"
         );
         this.reset();
@@ -379,7 +379,8 @@ function initLoadingAnimations() {
 // WhatsApp Integration
 function openWhatsApp(message = "") {
   const phoneNumber = "5511999999999"; // Replace with actual number
-  const defaultMessage = message || "Olá! Gostaria de agendar uma consulta.";
+  const defaultMessage =
+    message || "Hello! I would like to book a consultation.";
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     defaultMessage
   )}`;
@@ -389,10 +390,10 @@ function openWhatsApp(message = "") {
 // Service-specific WhatsApp messages
 function openWhatsAppForService(service) {
   const messages = {
-    botox: "Olá! Gostaria de saber mais sobre o tratamento com Botox.",
+    botox: "Hello! I would like to know more about Botox treatment.",
     preenchimento: "Olá! Tenho interesse no preenchimento facial.",
-    harmonizacao: "Olá! Gostaria de informações sobre harmonização facial.",
-    consulta: "Olá! Gostaria de agendar uma consulta inicial gratuita.",
+    harmonizacao: "Hello! I would like information about facial harmonisation.",
+    consulta: "Hello! I would like to book a free initial consultation.",
   };
 
   openWhatsApp(messages[service] || "");
