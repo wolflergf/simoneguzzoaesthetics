@@ -1,5 +1,3 @@
-// Simone Guzzo Aesthetics - JavaScript Functionality
-
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize all functionality
   initMobileMenu();
@@ -111,20 +109,38 @@ function initFAQAccordion() {
     question.addEventListener("click", function () {
       const answer = this.nextElementSibling;
       const isOpen = answer.classList.contains("open");
+      const chevron = this.querySelector("svg");
 
       // Close all other FAQ items
       faqQuestions.forEach((q) => {
         const a = q.nextElementSibling;
+        const c = q.querySelector("svg");
         q.classList.remove("active");
         a.classList.remove("open");
+        a.classList.add("hidden");
         a.style.maxHeight = "0";
+        if (c) {
+          c.classList.remove("rotate-180");
+        }
       });
 
       // Toggle current item
       if (!isOpen) {
         this.classList.add("active");
+        answer.classList.remove("hidden");
         answer.classList.add("open");
         answer.style.maxHeight = answer.scrollHeight + "px";
+        if (chevron) {
+          chevron.classList.add("rotate-180");
+        }
+      } else {
+        this.classList.remove("active");
+        answer.classList.remove("open");
+        answer.classList.add("hidden");
+        answer.style.maxHeight = "0";
+        if (chevron) {
+          chevron.classList.remove("rotate-180");
+        }
       }
     });
   });
