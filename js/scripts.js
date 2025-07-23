@@ -1,3 +1,5 @@
+// Simone Guzzo Aesthetics - JavaScript Functionality
+
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize all functionality
   initMobileMenu();
@@ -70,11 +72,11 @@ function initGalleryFilters() {
 
         // Update active button
         filterBtns.forEach((b) => {
-          b.classList.remove("active", "bg-gold", "text-white");
+          b.classList.remove("active", "bg-rose-light", "text-brown-dark");
           b.classList.add("bg-gray-200", "text-gray-700");
         });
         this.classList.remove("bg-gray-200", "text-gray-700");
-        this.classList.add("active", "bg-gold", "text-white");
+        this.classList.add("active", "bg-rose-light", "text-brown-dark");
 
         // Filter gallery items
         galleryItems.forEach((item) => {
@@ -156,11 +158,11 @@ function initFAQAccordion() {
 
         // Update active button
         faqCategoryBtns.forEach((b) => {
-          b.classList.remove("active", "bg-gold", "text-white");
+          b.classList.remove("active", "bg-rose-light", "text-brown-dark");
           b.classList.add("bg-gray-200", "text-gray-700");
         });
         this.classList.remove("bg-gray-200", "text-gray-700");
-        this.classList.add("active", "bg-gold", "text-white");
+        this.classList.add("active", "bg-rose-light", "text-brown-dark");
 
         // Filter FAQ items
         faqItems.forEach((item) => {
@@ -394,7 +396,7 @@ function initLoadingAnimations() {
 
 // WhatsApp Integration
 function openWhatsApp(message = "") {
-  const phoneNumber = "5511999999999"; // Replace with actual number
+  const phoneNumber = "447900123456"; // UK number
   const defaultMessage =
     message || "Hello! I would like to book a consultation.";
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -407,7 +409,7 @@ function openWhatsApp(message = "") {
 function openWhatsAppForService(service) {
   const messages = {
     botox: "Hello! I would like to know more about Botox treatment.",
-    preenchimento: "Olá! Tenho interesse no preenchimento facial.",
+    preenchimento: "Hello! I am interested in dermal fillers.",
     harmonizacao: "Hello! I would like information about facial harmonisation.",
     consulta: "Hello! I would like to book a free initial consultation.",
   };
@@ -507,8 +509,8 @@ window.addEventListener("error", function (e) {
 // Service Worker Registration (for future PWA features)
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
-    // navigator.serviceWorker.register('/sw.js')
-    //     .then(registration => console.log('SW registered'))
-    //     .catch(error => console.log('SW registration failed'));
+    // navigator.serviceWorker.register("/sw.js")
+    //     .then(registration => console.log("SW registered"))
+    //     .catch(error => console.log("SW registration failed"));
   });
 }

@@ -19,9 +19,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiona:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,13 +28,15 @@
             theme: {
                 extend: {
                     colors: {
-                        'rose-light': '#f9e9ef',
-                        'gold': '#c9a96e',
-                        'gold-dark': '#b8956b'
+                        'rose-light': '#E3C1C3',
+                        'brown-dark': '#643D40',
+                        'brown-medium': '#8B5A5F',
+                        'rose-pale': '#F5E8E9'
                     },
                     fontFamily: {
-                        'playfair': ['Playfair Display', 'serif'],
-                        'inter': ['Inter', 'sans-serif']
+                        'sephir': ['Sephir', 'serif'],
+                        'major': ['Le Major', 'serif'],
+                        'kiona': ['Kiona', 'sans-serif']
                     }
                 }
             }
@@ -44,42 +44,47 @@
     </script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body class="font-inter bg-white">
+<body class="font-kiona bg-white">
     <!-- Header -->
     <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full flex items-center justify-center">
-                        <span class="text-gold-dark font-playfair font-bold text-lg">SG</span>
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/Logocircular.png" alt="Simone Guzzo Aesthetics Logo" class="w-12 h-12">
+                    <div class="flex flex-col text-center">
+                        <span class="font-major font-semibold text-xl text-brown-dark">Simone Guzzo</span>
+                        <span class="font-kiona text-sm text-brown-medium tracking-wider uppercase">Aesthetics</span>
                     </div>
-                    <span class="font-playfair font-semibold text-xl text-gray-800">Simone Guzzo</span>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-gold transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-gold transition-colors font-medium">About</a>
+                    <a href="index.html"
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Home</a>
+                    <a href="about.html"
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">About</a>
                     <a href="services.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Services</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Services</a>
                     <a href="gallery.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Gallery</a>
-                    <a href="faq.html" class="text-gray-700 hover:text-gold transition-colors font-medium">FAQ</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Gallery</a>
+                    <a href="faq.html"
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">FAQ</a>
                     <a href="contact.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Contact</a>
-                    <a href="https://wa.me/5511999999999" target="_blank"
-                        class="bg-gold hover:bg-gold-dark text-white px-6 py-2 rounded-full transition-colors font-medium">
-                        Book a Consultation
-                    </a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Contact</a>
+                    <div class="flex flex-col text-center">
+                        <a href="https://wa.me/5511999999999" target="_blank"
+                            class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-6 py-2 rounded-full transition-all duration-300 font-medium">
+                            Book a Consultation
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden p-2" id="mobile-menu-btn">
+                <button class="md:hidden p-2 text-brown-dark" id="mobile-menu-btn">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
@@ -90,17 +95,20 @@
             <!-- Mobile Menu -->
             <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
                 <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="text-gray-700 hover:text-gold transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-gold transition-colors font-medium">About</a>
+                    <a href="index.html"
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Home</a>
+                    <a href="about.html"
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">About</a>
                     <a href="services.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Services</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Services</a>
                     <a href="gallery.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Gallery</a>
-                    <a href="faq.html" class="text-gray-700 hover:text-gold transition-colors font-medium">FAQ</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Gallery</a>
+                    <a href="faq.html"
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">FAQ</a>
                     <a href="contact.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Contact</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Contact</a>
                     <a href="https://wa.me/5511999999999" target="_blank"
-                        class="bg-gold hover:bg-gold-dark text-white px-6 py-2 rounded-full transition-colors font-medium text-center">
+                        class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-6 py-2 rounded-full transition-all duration-300 font-medium text-center">
                         Book a Consultation
                     </a>
                 </div>
@@ -109,36 +117,41 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 bg-gradient-to-br from-rose-light/30 to-white">
+    <section class="pt-24 pb-16 bg-gradient-to-br from-rose-pale to-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <!-- <div class="absolute top-22 left-2 w-56 h-56 opacity-20">
+            <img src="assets/images/Logocircular.png" alt="" class="w-full h-full object-contain animate-float">
+        </div> -->
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
-                    <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                        Beauty with <span class="text-gold">Clinical Safety</span>
+                    <h1 class="font-major text-4xl md:text-5xl lg:text-6xl font-bold text-brown-dark leading-tight">
+                        Beauty with <span class="text-rose-light">Clinical Safety</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                    <p class="text-lg md:text-xl text-brown-medium leading-relaxed font-kiona">
                         Treatments performed by a specialist nurse with over 10 years of clinical experience.
                         Safe aesthetic procedures and natural results.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="https://wa.me/5511999999999" target="_blank"
-                            class="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 text-center">
+                            class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 text-center">
                             Book Your Consultation
                         </a>
                         <a href="services.html"
-                            class="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 text-center">
+                            class="border-2 border-rose-light text-rose-light hover:bg-rose-light hover:text-brown-dark px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 text-center">
                             View Services
                         </a>
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 rounded-3xl overflow-hidden">
+                    <div
+                        class="aspect-square bg-gradient-to-br from-rose-light/30 to-brown-dark/10 rounded-3xl overflow-hidden">
                         <img src="assets/images/simone-hero.jpg" alt="Simone Guzzo - Specialist Aesthetic Nurse"
-                            class="w-full h-full object-cover">
+                            class="w-full h-full object-cover object-top">
                     </div>
                     <!-- Floating elements -->
-                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-gold/20 rounded-full blur-xl"></div>
-                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-rose-light rounded-full blur-lg"></div>
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-rose-light/20 rounded-full blur-xl"></div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-brown-dark/10 rounded-full blur-lg"></div>
                 </div>
             </div>
         </div>
@@ -148,108 +161,120 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="font-major text-3xl md:text-4xl font-bold text-brown-dark mb-4">
                     Why choose our services?
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p class="text-lg text-brown-medium max-w-2xl mx-auto font-kiona">
                     We combine clinical expertise with the most modern aesthetic techniques
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                <div class="text-center p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300 card-hover">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-rose-light to-gold/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="w-16 h-16 bg-gradient-to-br from-rose-light/30 to-brown-dark/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brown-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-3">Clinical Safety</h3>
-                    <p class="text-gray-600">Procedures performed by a registered nurse with specialized aesthetic
-                        training</p>
+                    <h3 class="font-major text-xl font-semibold text-brown-dark mb-3">Clinical Safety</h3>
+                    <p class="text-brown-medium font-kiona">Procedures performed by a registered nurse with specialized
+                        aesthetic training</p>
                 </div>
 
-                <div class="text-center p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                <div class="text-center p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300 card-hover">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-rose-light to-gold/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="w-16 h-16 bg-gradient-to-br from-rose-light/30 to-brown-dark/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brown-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
                             </path>
                         </svg>
                     </div>
-                    <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-3">Natural Results</h3>
-                    <p class="text-gray-600">Advanced techniques that enhance your natural beauty without exaggeration
-                    </p>
+                    <h3 class="font-major text-xl font-semibold text-brown-dark mb-3">Natural Results</h3>
+                    <p class="text-brown-medium font-kiona">Advanced techniques that enhance your natural beauty without
+                        exaggeration</p>
                 </div>
 
-                <div class="text-center p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+                <div class="text-center p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300 card-hover">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-rose-light to-gold/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="w-16 h-16 bg-gradient-to-br from-rose-light/30 to-brown-dark/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brown-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-3">Personalised Care</h3>
-                    <p class="text-gray-600">Detailed consultation and individualized treatment plan for each client</p>
+                    <h3 class="font-major text-xl font-semibold text-brown-dark mb-3">Personalised Care</h3>
+                    <p class="text-brown-medium font-kiona">Detailed consultation and individualized treatment plan for
+                        each client</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Preview -->
-    <section class="py-16 bg-rose-light/20">
+    <section class="py-16 bg-rose-pale/50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="font-major text-3xl md:text-4xl font-bold text-brown-dark mb-4">
                     Our Services
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p class="text-lg text-brown-medium max-w-2xl mx-auto font-kiona">
                     Specialised aesthetic treatments to enhance your natural beauty
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="h-48 bg-gradient-to-br from-rose-light to-gold/20"></div>
-                    <div class="p-6">
-                        <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-3">Botox</h3>
-                        <p class="text-gray-600 mb-4">Treatment for expression lines with natural and long-lasting
-                            results</p>
-                        <a href="services.html#botox" class="text-gold hover:text-gold-dark font-semibold">Learn more
-                            →</a>
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 service-card">
+                    <div
+                        class="h-48 bg-gradient-to-br from-rose-light/20 to-brown-dark/10 flex items-center justify-center">
+                        <img src="assets/images/Elementodamarca.png" alt="" class="w-28 h-30 opacity-30">
                     </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="h-48 bg-gradient-to-br from-rose-light to-gold/20"></div>
                     <div class="p-6">
-                        <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-3">Dermal Fillers</h3>
-                        <p class="text-gray-600 mb-4">Volume restoration and facial contouring with hyaluronic acid</p>
-                        <a href="services.html#preenchimento" class="text-gold hover:text-gold-dark font-semibold">Learn
+                        <h3 class="font-major text-xl font-semibold text-brown-dark mb-3">Botox</h3>
+                        <p class="text-brown-medium mb-4 font-kiona">Treatment for expression lines with natural and
+                            long-lasting results</p>
+                        <a href="services.html#botox" class="text-rose-light hover:text-brown-dark font-semibold">Learn
                             more →</a>
                     </div>
                 </div>
 
                 <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="h-48 bg-gradient-to-br from-rose-light to-gold/20"></div>
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 service-card">
+                    <div
+                        class="h-48 bg-gradient-to-br from-rose-light/20 to-brown-dark/10 flex items-center justify-center">
+                        <img src="assets/images/Elementodamarca.png" alt="" class="w-28 h-30 opacity-30">
+                    </div>
                     <div class="p-6">
-                        <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-3">Consultation</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive assessment and personalised treatment plan</p>
-                        <a href="services.html#consulta" class="text-gold hover:text-gold-dark font-semibold">Learn more
-                            →</a>
+                        <h3 class="font-major text-xl font-semibold text-brown-dark mb-3">Dermal Fillers</h3>
+                        <p class="text-brown-medium mb-4 font-kiona">Volume restoration and facial contouring with
+                            hyaluronic acid</p>
+                        <a href="services.html#preenchimento"
+                            class="text-rose-light hover:text-brown-dark font-semibold">Learn more →</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 service-card">
+                    <div
+                        class="h-48 bg-gradient-to-br from-rose-light/20 to-brown-dark/10 flex items-center justify-center">
+                        <img src="assets/images/Elementodamarca.png" alt="" class="w-28 h-30 opacity-30">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-major text-xl font-semibold text-brown-dark mb-3">Consultation</h3>
+                        <p class="text-brown-medium mb-4 font-kiona">Comprehensive assessment and personalised treatment
+                            plan</p>
+                        <a href="services.html#consulta"
+                            class="text-rose-light hover:text-brown-dark font-semibold">Learn more →</a>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-12">
                 <a href="services.html"
-                    class="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                    class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                     View All Services
                 </a>
             </div>
@@ -260,58 +285,58 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="font-major text-3xl md:text-4xl font-bold text-brown-dark mb-4">
                     What our clients say
                 </h2>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-rose-light/30 p-6 rounded-2xl">
+                <div class="bg-rose-pale/30 p-6 rounded-2xl testimonial-card">
                     <div class="flex mb-4">
-                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="text-rose-light text-xl">★★★★★</span>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Exceptional professional! I felt safe throughout the procedure
-                        and the result was exactly what I wanted."</p>
-                    <p class="font-semibold text-gray-800">- Maria Silva</p>
+                    <p class="text-brown-dark mb-4 italic font-kiona">"Exceptional professional! I felt safe throughout
+                        the procedure and the result was exactly what I wanted."</p>
+                    <p class="font-semibold text-brown-dark font-major">- Maria Silva</p>
                 </div>
 
-                <div class="bg-rose-light/30 p-6 rounded-2xl">
+                <div class="bg-rose-pale/30 p-6 rounded-2xl testimonial-card">
                     <div class="flex mb-4">
-                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="text-rose-light text-xl">★★★★★</span>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Simone is very careful and attentive. She explained the whole
-                        process and the result was natural and beautiful."</p>
-                    <p class="font-semibold text-gray-800">- Ana Costa</p>
+                    <p class="text-brown-dark mb-4 italic font-kiona">"Simone is very careful and attentive. She
+                        explained the whole process and the result was natural and beautiful."</p>
+                    <p class="font-semibold text-brown-dark font-major">- Ana Costa</p>
                 </div>
 
-                <div class="bg-rose-light/30 p-6 rounded-2xl">
+                <div class="bg-rose-pale/30 p-6 rounded-2xl testimonial-card">
                     <div class="flex mb-4">
-                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="text-rose-light text-xl">★★★★★</span>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Highly recommended! Impeccable technique and a very welcoming
-                        environment."</p>
-                    <p class="font-semibold text-gray-800">- Carla Santos</p>
+                    <p class="text-brown-dark mb-4 italic font-kiona">"Highly recommended! Impeccable technique and a
+                        very welcoming environment."</p>
+                    <p class="font-semibold text-brown-dark font-major">- Carla Santos</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-br from-gold/10 to-rose-light/30">
+    <section class="py-16 bg-gradient-to-br from-rose-light/20 to-rose-pale/50">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 class="font-major text-3xl md:text-4xl font-bold text-brown-dark mb-4">
                 Ready to enhance your beauty?
             </h2>
-            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p class="text-lg text-brown-medium mb-8 max-w-2xl mx-auto font-kiona">
                 Book your consultation and discover how we can help you feel even more confident
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://wa.me/5511999999999" target="_blank"
-                    class="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                    class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                     Book via WhatsApp
                 </a>
                 <a href="contact.html"
-                    class="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
+                    class="border-2 border-rose-light text-rose-light hover:bg-rose-light hover:text-brown-dark px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
                     Contact Form
                 </a>
             </div>
@@ -319,39 +344,43 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-brown-dark text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div
-                            class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full flex items-center justify-center">
-                            <span class="text-gold-dark font-playfair font-bold text-lg">SG</span>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/Logocircular.png" alt="Simone Guzzo Aesthetics Logo"
+                            class="w-16 h-16 filter brightness-0 invert">
+                        <div class="flex flex-col text-center">
+                            <span class="font-major font-semibold text-lg">Simone Guzzo</span>
+                            <span class="font-kiona text-sm text-rose-light tracking-wider uppercase">Aesthetics</span>
                         </div>
-                        <span class="font-playfair font-semibold text-xl">Simone Guzzo</span>
                     </div>
-                    <p class="text-gray-300">Beauty with clinical safety. Aesthetic procedures performed by a specialist
-                        nurse.</p>
+                    <p class="text-gray-300 font-kiona">Beauty with clinical safety. Aesthetic procedures performed by a
+                        specialist nurse.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-playfair font-semibold text-lg mb-4">Navigation</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-300 hover:text-gold transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-gold transition-colors">About</a></li>
-                        <li><a href="services.html" class="text-gray-300 hover:text-gold transition-colors">Services</a>
+                    <h3 class="font-major font-semibold text-lg mb-4">Navigation</h3>
+                    <ul class="space-y-2 font-kiona">
+                        <li><a href="index.html" class="text-gray-300 hover:text-rose-light transition-colors">Home</a>
                         </li>
-                        <li><a href="gallery.html" class="text-gray-300 hover:text-gold transition-colors">Gallery</a>
+                        <li><a href="about.html" class="text-gray-300 hover:text-rose-light transition-colors">About</a>
                         </li>
-                        <li><a href="faq.html" class="text-gray-300 hover:text-gold transition-colors">FAQ</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-gold transition-colors">Contact</a>
+                        <li><a href="services.html"
+                                class="text-gray-300 hover:text-rose-light transition-colors">Services</a></li>
+                        <li><a href="gallery.html"
+                                class="text-gray-300 hover:text-rose-light transition-colors">Gallery</a></li>
+                        <li><a href="faq.html" class="text-gray-300 hover:text-rose-light transition-colors">FAQ</a>
                         </li>
+                        <li><a href="contact.html"
+                                class="text-gray-300 hover:text-rose-light transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-playfair font-semibold text-lg mb-4">Contact</h3>
-                    <ul class="space-y-2 text-gray-300">
+                    <h3 class="font-major font-semibold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300 font-kiona">
                         <li>📱 WhatsApp: +44 7XXX XXXXXX</li>
                         <li>📧 simone@simoneguzzoaesthetics.com</li>
                         <li>📍 London, UK</li>
@@ -359,18 +388,18 @@
                 </div>
 
                 <div>
-                    <h3 class="font-playfair font-semibold text-lg mb-4">Social Media</h3>
+                    <h3 class="font-major font-semibold text-lg mb-4">Social Media</h3>
                     <div class="flex space-x-4">
                         <a href="https://instagram.com/simoneguzzoaesthetics" target="_blank"
-                            class="w-10 h-10 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-rose-light hover:bg-white rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5 text-brown-dark" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
                         <a href="https://wa.me/5511999999999" target="_blank"
-                            class="w-10 h-10 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-rose-light hover:bg-white rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5 text-brown-dark" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.085" />
                             </svg>
@@ -379,15 +408,15 @@
                 </div>
             </div>
 
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 font-kiona">
                 <p>&copy; 2025 Simone Guzzo Aesthetics. All rights reserved.</p>
-                <p class="mt-2 text-sm">Registered Nurse with NMC (Nursing and Midwifery Council) - UK</p>
+                <!-- <p class="mt-2 text-sm">Registered Nurse with NMC (Nursing and Midwifery Council) - UK</p> -->
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>
