@@ -11,9 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiona:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,13 +20,15 @@
             theme: {
                 extend: {
                     colors: {
-                        'rose-light': '#f9e9ef',
-                        'gold': '#c9a96e',
-                        'gold-dark': '#b8956b'
+                        'rose-light': '#E3C1C3',
+                        'brown-dark': '#643D40',
+                        'brown-medium': '#8B5A5F',
+                        'rose-pale': '#F5E8E9'
                     },
                     fontFamily: {
-                        'playfair': ['Playfair Display', 'serif'],
-                        'inter': ['Inter', 'sans-serif']
+                        'sephir': ['Sephir', 'serif'],
+                        'major': ['Le Major', 'serif'],
+                        'kiona': ['Kiona', 'sans-serif']
                     }
                 }
             }
@@ -36,41 +36,41 @@
     </script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="font-inter bg-white">
+<body class="font-kiona bg-white">
     <!-- Header -->
     <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full flex items-center justify-center">
-                        <span class="text-gold-dark font-playfair font-bold text-lg">SG</span>
+                <div class="flex items-center space-x-3">
+                    <img src="assets/images/Logocircular.png" alt="Simone Guzzo Aesthetics Logo" class="w-12 h-12">
+                    <div class="flex flex-col">
+                        <span class="font-major font-semibold text-xl text-brown-dark">Simone Guzzo</span>
+                        <span class="font-kiona text-sm text-brown-medium tracking-wider uppercase">Aesthetics</span>
                     </div>
-                    <span class="font-playfair font-semibold text-xl text-gray-800">Simone Guzzo</span>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-gold transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-gold transition-colors font-medium">About</a>
+                    <a href="index.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">About</a>
                     <a href="services.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Services</a>
-                    <a href="gallery.html" class="text-gold font-medium">Gallery</a>
-                    <a href="faq.html" class="text-gray-700 hover:text-gold transition-colors font-medium">FAQ</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Services</a>
+                    <a href="gallery.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">Gallery</a>
+                    <a href="faq.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">FAQ</a>
                     <a href="contact.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Contact</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Contact</a>
                     <a href="https://wa.me/5511999999999" target="_blank"
-                        class="bg-gold hover:bg-gold-dark text-white px-6 py-2 rounded-full transition-colors font-medium">
+                        class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-6 py-2 rounded-full transition-all duration-300 font-medium">
                         Book a Consultation
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden p-2" id="mobile-menu-btn">
+                <button class="md:hidden p-2 text-brown-dark" id="mobile-menu-btn">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
@@ -81,16 +81,16 @@
             <!-- Mobile Menu -->
             <div class="md:hidden hidden mt-4 pb-4" id="mobile-menu">
                 <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="text-gray-700 hover:text-gold transition-colors font-medium">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-gold transition-colors font-medium">About</a>
+                    <a href="index.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">About</a>
                     <a href="services.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Services</a>
-                    <a href="gallery.html" class="text-gold font-medium">Gallery</a>
-                    <a href="faq.html" class="text-gray-700 hover:text-gold transition-colors font-medium">FAQ</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Services</a>
+                    <a href="gallery.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">Gallery</a>
+                    <a href="faq.html" class="text-brown-dark hover:text-rose-light transition-colors font-medium">FAQ</a>
                     <a href="contact.html"
-                        class="text-gray-700 hover:text-gold transition-colors font-medium">Contact</a>
+                        class="text-brown-dark hover:text-rose-light transition-colors font-medium">Contact</a>
                     <a href="https://wa.me/5511999999999" target="_blank"
-                        class="bg-gold hover:bg-gold-dark text-white px-6 py-2 rounded-full transition-colors font-medium text-center">
+                        class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-6 py-2 rounded-full transition-all duration-300 font-medium text-center">
                         Book a Consultation
                     </a>
                 </div>
@@ -99,13 +99,17 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 bg-gradient-to-br from-rose-light/30 to-white">
+    <section class="pt-24 pb-16 bg-gradient-to-br from-rose-pale to-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 opacity-10">
+            <img src="assets/images/Elementodamarca.png" alt="" class="w-full h-full object-contain animate-float">
+        </div>
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h1 class="font-playfair text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                    Our <span class="text-gold">Gallery</span>
+                <h1 class="font-major text-4xl md:text-5xl font-bold text-brown-dark mb-4">
+                    Our <span class="text-rose-light">Gallery</span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                <p class="text-lg md:text-xl text-brown-medium max-w-3xl mx-auto font-kiona">
                     See the real results of our procedures. Each image tells a story of natural and safe transformation.
                 </p>
             </div>
@@ -117,27 +121,27 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-4 mb-8">
                 <button
-                    class="filter-btn active bg-gold text-white px-6 py-2 rounded-full font-medium transition-colors"
+                    class="filter-btn active bg-rose-light text-brown-dark px-6 py-2 rounded-full font-medium transition-colors"
                     data-filter="all">
                     All
                 </button>
                 <button
-                    class="filter-btn bg-gray-200 text-gray-700 hover:bg-gold hover:text-white px-6 py-2 rounded-full font-medium transition-colors"
+                    class="filter-btn bg-rose-pale/50 text-brown-dark hover:bg-rose-light hover:text-brown-dark px-6 py-2 rounded-full font-medium transition-colors"
                     data-filter="botox">
                     Botox
                 </button>
                 <button
-                    class="filter-btn bg-gray-200 text-gray-700 hover:bg-gold hover:text-white px-6 py-2 rounded-full font-medium transition-colors"
+                    class="filter-btn bg-rose-pale/50 text-brown-dark hover:bg-rose-light hover:text-brown-dark px-6 py-2 rounded-full font-medium transition-colors"
                     data-filter="preenchimento">
                     Fillers
                 </button>
                 <button
-                    class="filter-btn bg-gray-200 text-gray-700 hover:bg-gold hover:text-white px-6 py-2 rounded-full font-medium transition-colors"
+                    class="filter-btn bg-rose-pale/50 text-brown-dark hover:bg-rose-light hover:text-brown-dark px-6 py-2 rounded-full font-medium transition-colors"
                     data-filter="harmonizacao">
                     Harmonisation
                 </button>
                 <button
-                    class="filter-btn bg-gray-200 text-gray-700 hover:bg-gold hover:text-white px-6 py-2 rounded-full font-medium transition-colors"
+                    class="filter-btn bg-rose-pale/50 text-brown-dark hover:bg-rose-light hover:text-brown-dark px-6 py-2 rounded-full font-medium transition-colors"
                     data-filter="bastidores">
                     Behind the Scenes
                 </button>
@@ -153,23 +157,23 @@
                 <!-- Botox Results -->
                 <div class="gallery-item botox" data-category="botox">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/botox-before-after-1.jpg" alt="Botox - Before and After"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Botox
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Forehead Wrinkles</h3>
-                            <p class="text-gray-600 mb-4">Natural smoothing of expression lines with lasting results.
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Forehead Wrinkles</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Natural smoothing of expression lines with lasting results.
                             </p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <div class="flex items-center justify-between text-sm text-brown-medium font-kiona">
                                 <span>Age: 42 years</span>
                                 <span>Result: 6 months</span>
                             </div>
@@ -179,23 +183,23 @@
 
                 <div class="gallery-item botox" data-category="botox">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/botox-before-after-2.jpg" alt="Botox Crow's Feet"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Botox
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Crow's Feet</h3>
-                            <p class="text-gray-600 mb-4">Treatment of wrinkles around the eyes with precise technique.
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Crow's Feet</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Treatment of wrinkles around the eyes with precise technique.
                             </p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <div class="flex items-center justify-between text-sm text-brown-medium font-kiona">
                                 <span>Age: 38 years</span>
                                 <span>Result: 5 months</span>
                             </div>
@@ -206,22 +210,22 @@
                 <!-- Fillers Results -->
                 <div class="gallery-item preenchimento" data-category="preenchimento">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/lip-filler-before-after.jpg" alt="Lip Filler"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Fillers
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Lip Filler</h3>
-                            <p class="text-gray-600 mb-4">Natural lip augmentation respecting facial harmony.</p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Lip Filler</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Natural lip augmentation respecting facial harmony.</p>
+                            <div class="flex items-center justify-between text-sm text-brown-medium font-kiona">
                                 <span>Age: 29 years</span>
                                 <span>Result: 12 months</span>
                             </div>
@@ -231,22 +235,22 @@
 
                 <div class="gallery-item preenchimento" data-category="preenchimento">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/cheek-filler-before-after.jpg" alt="Cheek Filler"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Fillers
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Cheekbones</h3>
-                            <p class="text-gray-600 mb-4">Volume restoration and facial contour definition.</p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Cheekbones</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Volume restoration and facial contour definition.</p>
+                            <div class="flex items-center justify-between text-sm text-brown-medium font-kiona">
                                 <span>Age: 45 years</span>
                                 <span>Result: 15 months</span>
                             </div>
@@ -257,23 +261,23 @@
                 <!-- Harmonisation Results -->
                 <div class="gallery-item harmonizacao" data-category="harmonizacao">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/full-face-harmony.jpg" alt="Complete Facial Harmonisation"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Harmonisation
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Complete Harmonisation
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Complete Harmonisation
                             </h3>
-                            <p class="text-gray-600 mb-4">Combination of Botox and fillers for natural results.</p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <p class="text-brown-medium mb-4 font-kiona">Combination of Botox and fillers for natural results.</p>
+                            <div class="flex items-center justify-between text-sm text-brown-medium font-kiona">
                                 <span>Age: 35 years</span>
                                 <span>Multiple sessions</span>
                             </div>
@@ -283,22 +287,22 @@
 
                 <div class="gallery-item harmonizacao" data-category="harmonizacao">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/facial-contouring.jpg" alt="Facial Contouring"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Harmonisation
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Facial Contouring</h3>
-                            <p class="text-gray-600 mb-4">Facial definition and sculpting with advanced techniques.</p>
-                            <div class="flex items-center justify-between text-sm text-gray-500">
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Facial Contouring</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Facial definition and sculpting with advanced techniques.</p>
+                            <div class="flex items-center justify-between text-sm text-brown-medium font-kiona">
                                 <span>Age: 40 years</span>
                                 <span>Result: 18 months</span>
                             </div>
@@ -309,43 +313,43 @@
                 <!-- Behind the Scenes -->
                 <div class="gallery-item bastidores" data-category="bastidores">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/clinic-environment.jpg" alt="Clinic Environment"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Behind the Scenes
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Welcoming Environment
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Welcoming Environment
                             </h3>
-                            <p class="text-gray-600 mb-4">Our space was designed to provide comfort and tranquility.</p>
+                            <p class="text-brown-medium mb-4 font-kiona">Our space was designed to provide comfort and tranquility.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="gallery-item bastidores" data-category="bastidores">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/procedure-setup.jpg" alt="Procedure Preparation"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Behind the Scenes
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Careful Preparation</h3>
-                            <p class="text-gray-600 mb-4">Every procedure is prepared with utmost care and
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Careful Preparation</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Every procedure is prepared with utmost care and
                                 sterilisation.</p>
                         </div>
                     </div>
@@ -353,21 +357,21 @@
 
                 <div class="gallery-item bastidores" data-category="bastidores">
                     <div
-                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 card-hover">
                         <div class="relative">
                             <div
-                                class="aspect-square bg-gradient-to-br from-rose-light to-gold/20 flex items-center justify-center">
+                                class="aspect-square bg-gradient-to-br from-rose-pale/30 to-brown-dark/10 flex items-center justify-center">
                                 <img src="assets/images/consultation-room.jpg" alt="Consultation Room"
                                     class="w-full h-full object-cover">
                             </div>
                             <div
-                                class="absolute top-4 left-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                class="absolute top-4 left-4 bg-rose-light text-brown-dark px-3 py-1 rounded-full text-sm font-semibold">
                                 Behind the Scenes
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="font-playfair text-xl font-semibold text-gray-800 mb-2">Consultation Room</h3>
-                            <p class="text-gray-600 mb-4">Private space for discussions and personalised planning.</p>
+                            <h3 class="font-major text-xl font-semibold text-brown-dark mb-2">Consultation Room</h3>
+                            <p class="text-brown-medium mb-4 font-kiona">Private space for discussions and personalised planning.</p>
                         </div>
                     </div>
                 </div>
@@ -376,59 +380,59 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-rose-light/20">
+    <section class="py-16 bg-rose-pale/50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                <h2 class="font-major text-3xl md:text-4xl font-bold text-brown-dark mb-4">
                     What our clients say
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                <p class="text-lg text-brown-medium max-w-2xl mx-auto font-kiona">
                     Real testimonials from those who trust our work
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
                     <div class="flex mb-4">
-                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="text-rose-light text-xl">★★★★★</span>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"The Botox result was exactly what I wanted - natural and
+                    <p class="text-brown-medium mb-4 italic font-kiona">"The Botox result was exactly what I wanted - natural and
                         subtle. Simone is very professional and careful."</p>
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-light to-brown-dark rounded-full"></div>
                         <div>
-                            <p class="font-semibold text-gray-800">Maria S.</p>
-                            <p class="text-sm text-gray-600">Forehead Botox</p>
+                            <p class="font-semibold text-brown-dark font-major">Maria S.</p>
+                            <p class="text-sm text-brown-medium font-kiona">Forehead Botox</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
                     <div class="flex mb-4">
-                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="text-rose-light text-xl">★★★★★</span>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"My lips looked beautiful and natural! I received many
+                    <p class="text-brown-medium mb-4 italic font-kiona">"My lips looked beautiful and natural! I received many
                         compliments and feel much more confident."</p>
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-light to-brown-dark rounded-full"></div>
                         <div>
-                            <p class="font-semibold text-gray-800">Ana C.</p>
-                            <p class="text-sm text-gray-600">Lip filler</p>
+                            <p class="font-semibold text-brown-dark font-major">Ana C.</p>
+                            <p class="text-sm text-brown-medium font-kiona">Lip filler</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
                     <div class="flex mb-4">
-                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="text-rose-light text-xl">★★★★★</span>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Facial harmonisation completely changed my self-esteem.
+                    <p class="text-brown-medium mb-4 italic font-kiona">"Facial harmonisation completely changed my self-esteem.
                         Incredible and very natural result!"</p>
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full"></div>
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-light to-brown-dark rounded-full"></div>
                         <div>
-                            <p class="font-semibold text-gray-800">Carla R.</p>
-                            <p class="text-sm text-gray-600">Complete harmonisation</p>
+                            <p class="font-semibold text-brown-dark font-major">Carla R.</p>
+                            <p class="text-sm text-brown-medium font-kiona">Complete harmonisation</p>
                         </div>
                     </div>
                 </div>
@@ -439,9 +443,9 @@
     <!-- Privacy Notice -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <div class="bg-rose-light/30 p-8 rounded-2xl text-center">
-                <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-4">Privacy and Consent</h3>
-                <p class="text-gray-600 max-w-3xl mx-auto">
+            <div class="bg-rose-pale/30 p-8 rounded-2xl text-center testimonial-card">
+                <h3 class="font-major text-2xl font-bold text-brown-dark mb-4">Privacy and Consent</h3>
+                <p class="text-brown-medium max-w-3xl mx-auto font-kiona">
                     All images have been shared with the express consent of clients.
                     We respect the privacy and confidentiality of all our patients.
                     Images may have been edited to protect identity when requested.
@@ -451,22 +455,22 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-br from-gold/10 to-rose-light/30">
+    <section class="py-16 bg-gradient-to-br from-rose-pale/10 to-rose-light/30">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 class="font-major text-3xl md:text-4xl font-bold text-brown-dark mb-4">
                 Ready for your transformation?
             </h2>
-            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p class="text-lg text-brown-medium mb-8 max-w-2xl mx-auto font-kiona">
                 Book your consultation and discover how we can enhance your natural beauty with safety and
                 professionalism.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://wa.me/5511999999999" target="_blank"
-                    class="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                    class="bg-rose-light hover:bg-brown-dark text-brown-dark hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
                     Book a Consultation
                 </a>
                 <a href="services.html"
-                    class="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
+                    class="border-2 border-rose-light text-rose-light hover:bg-rose-light hover:text-brown-dark px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
                     View Services
                 </a>
             </div>
@@ -474,39 +478,39 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-brown-dark text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div
-                            class="w-10 h-10 bg-gradient-to-br from-rose-light to-gold rounded-full flex items-center justify-center">
-                            <span class="text-gold-dark font-playfair font-bold text-lg">SG</span>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/images/Logocircular.png" alt="Simone Guzzo Aesthetics Logo" class="w-10 h-10 filter brightness-0 invert">
+                        <div class="flex flex-col">
+                            <span class="font-major font-semibold text-lg">Simone Guzzo</span>
+                            <span class="font-kiona text-sm text-rose-light tracking-wider uppercase">Aesthetics</span>
                         </div>
-                        <span class="font-playfair font-semibold text-xl">Simone Guzzo</span>
                     </div>
-                    <p class="text-gray-300">Beauty with clinical safety. Aesthetic procedures performed by a specialist
+                    <p class="text-gray-300 font-kiona">Beauty with clinical safety. Aesthetic procedures performed by a specialist
                         nurse.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-playfair font-semibold text-lg mb-4">Navigation</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-300 hover:text-gold transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-gold transition-colors">About</a></li>
-                        <li><a href="services.html" class="text-gray-300 hover:text-gold transition-colors">Services</a>
+                    <h3 class="font-major font-semibold text-lg mb-4">Navigation</h3>
+                    <ul class="space-y-2 font-kiona">
+                        <li><a href="index.html" class="text-gray-300 hover:text-rose-light transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-rose-light transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-rose-light transition-colors">Services</a>
                         </li>
-                        <li><a href="gallery.html" class="text-gray-300 hover:text-gold transition-colors">Gallery</a>
+                        <li><a href="gallery.html" class="text-gray-300 hover:text-rose-light transition-colors">Gallery</a>
                         </li>
-                        <li><a href="faq.html" class="text-gray-300 hover:text-gold transition-colors">FAQ</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-gold transition-colors">Contact</a>
+                        <li><a href="faq.html" class="text-gray-300 hover:text-rose-light transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-rose-light transition-colors">Contact</a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-playfair font-semibold text-lg mb-4">Contact</h3>
-                    <ul class="space-y-2 text-gray-300">
+                    <h3 class="font-major font-semibold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300 font-kiona">
                         <li>📱 WhatsApp: +44 7XXX XXXXXX</li>
                         <li>📧 simone@simoneguzzoaesthetics.com</li>
                         <li>📍 London, UK</li>
@@ -514,18 +518,18 @@
                 </div>
 
                 <div>
-                    <h3 class="font-playfair font-semibold text-lg mb-4">Social Media</h3>
+                    <h3 class="font-major font-semibold text-lg mb-4">Social Media</h3>
                     <div class="flex space-x-4">
                         <a href="https://instagram.com/simoneguzzoaesthetics" target="_blank"
-                            class="w-10 h-10 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-rose-light hover:bg-white rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5 text-brown-dark" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
                         <a href="https://wa.me/5511999999999" target="_blank"
-                            class="w-10 h-10 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-rose-light hover:bg-white rounded-full flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5 text-brown-dark" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.085" />
                             </svg>
@@ -534,7 +538,7 @@
                 </div>
             </div>
 
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 font-kiona">
                 <p>&copy; 2025 Simone Guzzo Aesthetics. All rights reserved.</p>
                 <p class="mt-2 text-sm">Registered Nurse with NMC (Nursing and Midwifery Council) - UK</p>
             </div>
@@ -542,7 +546,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
+
