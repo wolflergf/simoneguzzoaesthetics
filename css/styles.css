@@ -3,21 +3,21 @@
 /* Import custom fonts */
 @font-face {
   font-family: "Kiona";
-  src: url("assets/fonts/Kiona-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Kiona-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Le Major";
-  src: url("assets/fonts/LeMajor-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/LeMajor-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Sephir";
-  src: url("assets/fonts/Sephir-Regular.otf") format("opentype");
+  src: url("/assets/fonts/Sephir-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
